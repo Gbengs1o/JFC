@@ -138,25 +138,34 @@ section {
 
 .badge {
     display: inline-block;
-    background-color: #fff3cd;
-    color: #856404;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
+    background-color: var(--accent-blue);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    /* Increased from 1rem */
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3);
+    line-height: 1.1;
 }
 
 .subtitle {
-    font-size: 1.2rem;
-    color: var(--text-gray);
-    font-weight: 600;
+    font-size: 1.75rem;
+    /* Increased from 1.5rem */
+    color: var(--primary-blue);
+    font-weight: 800;
     margin-bottom: 15px;
+    line-height: 1.2;
 }
 
 .hero-intro {
-    font-weight: 500;
+    font-size: 1.2rem;
+    /* Increased from 1.1rem */
+    font-weight: 600;
     color: var(--text-dark);
+    margin-bottom: 20px;
 }
 
 .quick-disclaimer {
@@ -288,16 +297,37 @@ section {
 .results-side-by-side {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 15px;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 320px;
 }
 
 .result-img-side {
-    height: 60px;
-    /* Logo size */
+    height: 480px;
+    /* Large enough to be readable */
     width: auto;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.result-img-side:hover {
+    transform: scale(1.02);
+}
+
+.student-label {
+    font-size: 1.1rem;
+    color: var(--primary-blue);
+    line-height: 1.4;
+    font-weight: 500;
 }
 
 /* FAQ */
